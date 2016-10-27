@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4C822171DC1CBB900598DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C822161DC1CBB900598DBC /* AppDelegate.swift */; };
+		F4C822191DC1CBB900598DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C822181DC1CBB900598DBC /* ViewController.swift */; };
+		F4C8221C1DC1CBB900598DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C8221A1DC1CBB900598DBC /* Main.storyboard */; };
+		F4C8221E1DC1CBB900598DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C8221D1DC1CBB900598DBC /* Assets.xcassets */; };
+		F4C822211DC1CBB900598DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C8221F1DC1CBB900598DBC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4C822131DC1CBB900598DBC /* LeetCode_RomanToInteger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode_RomanToInteger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C822161DC1CBB900598DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4C822181DC1CBB900598DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4C8221B1DC1CBB900598DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4C8221D1DC1CBB900598DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4C822201DC1CBB900598DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4C822221DC1CBB900598DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C822101DC1CBB600598DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4C8220A1DC1CBB600598DBC = {
+			isa = PBXGroup;
+			children = (
+				F4C822151DC1CBB900598DBC /* LeetCode_RomanToInteger */,
+				F4C822141DC1CBB900598DBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C822141DC1CBB900598DBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C822131DC1CBB900598DBC /* LeetCode_RomanToInteger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C822151DC1CBB900598DBC /* LeetCode_RomanToInteger */ = {
+			isa = PBXGroup;
+			children = (
+				F4C822161DC1CBB900598DBC /* AppDelegate.swift */,
+				F4C822181DC1CBB900598DBC /* ViewController.swift */,
+				F4C8221A1DC1CBB900598DBC /* Main.storyboard */,
+				F4C8221D1DC1CBB900598DBC /* Assets.xcassets */,
+				F4C8221F1DC1CBB900598DBC /* LaunchScreen.storyboard */,
+				F4C822221DC1CBB900598DBC /* Info.plist */,
+			);
+			path = LeetCode_RomanToInteger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C822121DC1CBB600598DBC /* LeetCode_RomanToInteger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C822251DC1CBB900598DBC /* Build configuration list for PBXNativeTarget "LeetCode_RomanToInteger" */;
+			buildPhases = (
+				F4C8220F1DC1CBB600598DBC /* Sources */,
+				F4C822101DC1CBB600598DBC /* Frameworks */,
+				F4C822111DC1CBB600598DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCode_RomanToInteger;
+			productName = LeetCode_RomanToInteger;
+			productReference = F4C822131DC1CBB900598DBC /* LeetCode_RomanToInteger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C8220B1DC1CBB600598DBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ilogie;
+				TargetAttributes = {
+					F4C822121DC1CBB600598DBC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4C8220E1DC1CBB600598DBC /* Build configuration list for PBXProject "LeetCode_RomanToInteger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C8220A1DC1CBB600598DBC;
+			productRefGroup = F4C822141DC1CBB900598DBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C822121DC1CBB600598DBC /* LeetCode_RomanToInteger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C822111DC1CBB600598DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C822211DC1CBB900598DBC /* LaunchScreen.storyboard in Resources */,
+				F4C8221E1DC1CBB900598DBC /* Assets.xcassets in Resources */,
+				F4C8221C1DC1CBB900598DBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C8220F1DC1CBB600598DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C822191DC1CBB900598DBC /* ViewController.swift in Sources */,
+				F4C822171DC1CBB900598DBC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4C8221A1DC1CBB900598DBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C8221B1DC1CBB900598DBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C8221F1DC1CBB900598DBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C822201DC1CBB900598DBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C822231DC1CBB900598DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4C822241DC1CBB900598DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C822261DC1CBB900598DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeetCode_RomanToInteger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilogie.LeetCode-RomanToInteger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4C822271DC1CBB900598DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeetCode_RomanToInteger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilogie.LeetCode-RomanToInteger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C8220E1DC1CBB600598DBC /* Build configuration list for PBXProject "LeetCode_RomanToInteger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C822231DC1CBB900598DBC /* Debug */,
+				F4C822241DC1CBB900598DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C822251DC1CBB900598DBC /* Build configuration list for PBXNativeTarget "LeetCode_RomanToInteger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C822261DC1CBB900598DBC /* Debug */,
+				F4C822271DC1CBB900598DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C8220B1DC1CBB600598DBC /* Project object */;
+}

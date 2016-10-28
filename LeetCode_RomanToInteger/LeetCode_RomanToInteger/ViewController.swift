@@ -126,7 +126,6 @@ class Solution1 {
             }
         }
             return intValue
-
     }
 }
 

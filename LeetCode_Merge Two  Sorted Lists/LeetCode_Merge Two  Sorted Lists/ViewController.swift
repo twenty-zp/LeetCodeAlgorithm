@@ -1,28 +1,22 @@
 //
 //  ViewController.swift
-//  LeetCode_Remove Nth Node From End of List
+//  LeetCode_Merge Two  Sorted Lists
 //
-//  Created by zp on 16/10/31.
+//  Created by zp on 16/11/2.
 //  Copyright © 2016年 ilogie. All rights reserved.
 //
 
 import UIKit
 
-
-
-class ListNode:Equatable {
+class ListNode {
     var node: Int
     var nextNode: ListNode?
     init(node: Int) {
         self.node = node
     }
-    public static func ==(lhs: ListNode, rhs: ListNode) -> Bool
-    {
-        return lhs.node == rhs.node && lhs.nextNode == rhs.nextNode
-    }
 }
-
 class Solution {
+    
     
     //输出链表
     func showList(head: ListNode)  {
@@ -36,7 +30,7 @@ class Solution {
                 printStr =   printStr.appending("\(first!.node)")
             }
             first =  first!.nextNode
-
+            
         }
         let firstStr = String(head.node)
         guard  printStr != "" else {
@@ -46,50 +40,37 @@ class Solution {
         printStr = firstStr.appending("->\(printStr)")
         print(printStr)
     }
-    
-    func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
-        
-        var h = head
-        var p1,p2,pre: ListNode?
-        
-        if head == nil || n <= 0 {
-            return nil
-        }
-        p1 = head
-        p2 = head
-        
-        var i = 0
-        //1. 遍历n-1次,是为了获取到(2)中的p2位置.
-        while i < n-1 {
-            p1 = p1?.nextNode
-            if p1==nil {
-                return nil
-            }
-            i+=1
-        }
-        //2. 获取倒数n的节点
-        while p1?.nextNode != nil {
-            p1 = p1?.nextNode
-            pre = p2  //3. 此目的是为了要获取倒数节点的上一个节点,然后重新设置(4)上一个节点的nextNode
-            p2 = p2?.nextNode
-        }
 
-        if p2 == head {
-            h = head?.nextNode
+    //整合链表
+    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if l1 == nil {
+            return l2
+        }
+        if l2 == nil {
+            return l1
+        }
+        //1.通过判断节点上的值
+        if l1!.node > l2!.node {
+            
+            //2. 获取到新链表的头部
+            let  temp = l2
+            //3. 循环得到节点的下一个节点
+            temp!.nextNode =  mergeTwoLists(l1, temp!.nextNode)
+            return temp
         }else
         {
-            //4. 重新设置上一个节点的nextNode
-            pre?.nextNode = pre?.nextNode?.nextNode
+            //2. 获取到新链表的头部
+            let temp = l1
+            //3. 循环得到节点的下一个节点
+            temp!.nextNode =  mergeTwoLists(temp!.nextNode , l2)
+            return temp
         }
-        // 5. 此步骤和以上步骤没有关系,重新返回头节点
-        return h
     }
 }
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -104,19 +85,23 @@ class ViewController: UIViewController {
         fourNode.nextNode = fiveNode
         
         
+        
+        let firstNode1 = ListNode(node:3)
+        let secondNode1 = ListNode(node: 4)
+        firstNode1.nextNode = secondNode1
+        let thirdNode1 = ListNode(node: 6)
+        secondNode1.nextNode = thirdNode1
+        let fourNode1 = ListNode(node: 7)
+        thirdNode1.nextNode = fourNode1
+        let fiveNode1 = ListNode(node: 8)
+        fourNode1.nextNode = fiveNode1
+        
         let s = Solution()
-        
         s.showList(head: firstNode)
-        
-        let tempList = s.removeNthFromEnd(firstNode, 2)
-        
-        
-        s.showList(head: tempList!)
-        
-        s.showList(head: firstNode)
-        
+        s.showList(head: firstNode1)
+        s.showList(head: s.mergeTwoLists(firstNode, firstNode1)!)
         
     }
-    
+
 }
 
